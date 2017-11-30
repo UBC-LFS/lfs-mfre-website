@@ -11,10 +11,6 @@ jQuery(document).ready(function ($) {
   const wrap = (urlClass, targetClass) => {
     const elements = document.getElementsByClassName(urlClass)
     const urls = Array.from(elements).map(x => x.innerText.trim())
-    console.log(urls)
-
-    // const wrapper = `<a href='${url}' style='display: inherit;'></a>`
-
     const targets = document.getElementsByClassName(targetClass)
     Array.from(targets).map((x, i) => $(x).wrap(`<a href='${urls[i]}' style='display: inherit;'></a>`))
   }
