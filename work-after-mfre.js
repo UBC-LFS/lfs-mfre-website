@@ -2,18 +2,12 @@
 jQuery(document).ready(function ($) {
   $('.mfre-slider').slick()
 
-  const wrapCompanyURl = () => {
-    const companyWebsite = document.getElementById('company-website').innerText
-    const wrapper = `<a href='${companyWebsite}' style='display: inherit;'></a>`
-    $('#company-name').wrap(wrapper)
+  const wrap = (urlID, targetID) => {
+    const url = document.getElementById(urlID).innerText
+    const wrapper = `<a href='${url}' style='display: inherit;'></a>`
+    $('#' + targetID).wrap(wrapper)
   }
 
-  const wrapReadMore = () => {
-    const link = document.getElementById('link').innerText
-    const wrapper = `<a href='${link}''></a>`
-    $('#read-more').wrap(wrapper)
-  }
-
-  wrapCompanyURl()
-  wrapReadMore()
+  wrap('company-website', 'company-name')
+  wrap('link', 'read-more')
 })
