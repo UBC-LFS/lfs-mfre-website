@@ -1,20 +1,19 @@
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css"/>
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" async></script>
-
-[loop query="posts_per_page=1&amp;category_name=work-after-mfre-slider"]
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css" />
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" async></script> [loop query="posts_per_page=1&amp;category_name=work-after-mfre-slider"]
 <div class="mfre-slider">
   <div class="span12">
     <div class="span3">
-        [image_with_src img_class="profile-img"]
-        [link_with_content]
+      [image_with_src img_class="profile-img"]
+      <h2 style="text-align:center; margin-bottom: 0; margin-top: 0;">[cf student-name]</h2>
+      <p style="text-align: center;">[cf job-title] | [cf company]</p>
     </div>
-    <div class="span9">
-      <h2>[cf student-name]</h2>
-      <h3>[cf company]</h3>
-      <h3>[cf job-title]</h3>
-      [cf blurb]
+    <div class="span9" style="margin-left: 1.5%;">
+      [cf blurb] [link_with_content]
     </div>
   </div>
+</div>
+<div style="display: none;" id="company-website">
+  [cf company-website]
 </div>
 [/loop]
