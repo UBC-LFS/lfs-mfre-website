@@ -2,3 +2,12 @@ img.profile-img {
   border-radius: 50%; 
   margin: auto;
 }
+
+.border {
+  border: 2px solid #eee;
+  padding: 25px;
+}
+
+.border-top {
+  border-top: 15px solid #1cbc9c;
+}
