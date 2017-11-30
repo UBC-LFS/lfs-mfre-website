@@ -1,0 +1,24 @@
+img.featured {
+  height: auto;
+  max-width: 75%;
+  /*vertical-align: top;*/
+  border-radius: 100%;
+  /*margin: auto;*/
+}
+.third{
+width:22%;
+float:left;
+padding: 1%;
+}
+
+@media screen and (min-width:900px){
+.third{
+  width:97%;
+  padding:1%;
+  float:left;
+  }
+}
+
+.left-accordion{
+text-align:left !important;
+}
