@@ -1,13 +1,23 @@
 /* global jQuery */
 jQuery(document).ready(function ($) {
-  $('.mfre-slider').slick()
+  $('.mfre-slider').slick({
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true
+  })
 
-  const wrap = (urlID, targetID) => {
-    const url = document.getElementById(urlID).innerText
-    const wrapper = `<a href='${url}' style='display: inherit;'></a>`
-    $('#' + targetID).wrap(wrapper)
+  const wrap = (urlClass, targetClass) => {
+    const elements = document.getElementsByClassName(urlClass)
+    const urls = Array.from(elements).map(x => x.innerText.trim())
+    console.log(urls)
+
+    // const wrapper = `<a href='${url}' style='display: inherit;'></a>`
+
+    const targets = document.getElementsByClassName(targetClass)
+    Array.from(targets).map((x, i) => $(x).wrap(`<a href='${urls[i]}' style='display: inherit;'></a>`))
   }
 
   wrap('company-website', 'company-name')
-  wrap('link', 'read-more')
 })
