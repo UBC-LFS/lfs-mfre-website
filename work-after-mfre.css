@@ -11,3 +11,7 @@ img.profile-img {
 .border-top {
   border-top: 15px solid #1cbc9c;
 }
+
+.slick-dots {
+  position: relative !important;
+}

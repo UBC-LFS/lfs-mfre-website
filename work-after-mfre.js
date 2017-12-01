@@ -16,4 +16,6 @@ jQuery(document).ready(function ($) {
   }
 
   wrap('company-website', 'company-name')
+
+  $('.slick-dots').appendTo('#dots')
 })
