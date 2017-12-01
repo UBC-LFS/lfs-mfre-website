@@ -12,6 +12,12 @@ img.profile-img {
   border-top: 15px solid #1cbc9c;
 }
 
-.slick-dots {
+.slick-dots, .slick-prev, .slick-next {
   position: relative !important;
+  display: inline !important;
+}
+
+.slick-dots {
+  width: 100px;
+  bottom: 0 !important;
 }

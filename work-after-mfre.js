@@ -5,7 +5,8 @@ jQuery(document).ready(function ($) {
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: true
+    prevArrow: $('.slick-prev'),
+    nextArrow: $('.slick-next')
   })
 
   const wrap = (urlClass, targetClass) => {
@@ -17,5 +18,5 @@ jQuery(document).ready(function ($) {
 
   wrap('company-website', 'company-name')
 
-  $('.slick-dots').appendTo('#dots')
+  $('.slick-dots').insertAfter($('.slick-prev'))
 })
