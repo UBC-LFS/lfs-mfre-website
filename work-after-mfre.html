@@ -4,8 +4,8 @@
 <div class="border border-top">
   <div class="mfre-slider">
     [loop query="posts_per_page=2&amp;category_name=work-after-mfre-slider"]
-    <div class="span12">
-      <div class="span3">
+    <div>
+      <div class="profile-left">
         [image_with_src img_class="profile-img"]
         <h2 style="text-align:center; margin-bottom: 0; margin-top: 0;">[cf student-name]</h2>
         <div style="text-align: center; display: inline-block; width: 100%;">
@@ -13,7 +13,7 @@
           <div style="display: inherit;" class="company-name">[cf company]</div>
         </div>
       </div>
-      <div class="span9" style="margin-left: 2%; margin-top: 2%">
+      <div class="profile-right">
         [cf blurb] [link_with_content content='...READ MORE']
       </div>
       <div style="display: none;" class="company-website">
@@ -23,8 +23,8 @@
     [/loop]
   </div>
 </div>
-<div id="dots">
-  <div style="margin: auto;">
+<div id="dots" style="text-align: center;">
+  <div style="display: inline-block;">
     <button type="button" class="slick-prev">Previous</button>
     <button type="button" class="slick-next">Next</button>
   </div>
