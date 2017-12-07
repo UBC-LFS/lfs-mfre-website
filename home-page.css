@@ -19,6 +19,23 @@
   padding-bottom: 5%;
   z-index: 1;
 }
+@media screen and (max-width: 860px) {
+  .transparent .carousel-caption {
+    max-width: 100% !important;
+    position: absolute !important;
+    text-align: right !important;
+    margin-right: 0 !important;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .carousel-caption {
+    margin-right: 50px !important;
+  }
+  .carousel-caption a {
+    font-size: 150% !important;
+  }
+}
 /* Display full text on mobile devices */
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
@@ -422,9 +439,24 @@ a.carousel-control {
   line-height: 20px;
   text-shadow: 2px 2px 2px #000000;
 }
-@media screen and (max-width: 960px) {
-  .carousel-caption {
+@media screen and (max-width: 1700px) {
+  .carousel-caption a {
+    font-size: 300%;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .carousel-caption a {
+    font-size: 220%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .carousel-caption p {
       display: none;
+  }
+  .carousel-caption {
+    width: 100%;
   }
 }
 /* Override default slider to remove grey spacing bleed from menu */
