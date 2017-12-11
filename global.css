@@ -632,19 +632,6 @@ left: auto;
 bottom: 5px;
 }
 }
-@media screen and (min-width: 1800px) {
-.educ-dynamic {
-max-width: 1800px;
-margin-right: auto;
-margin-left: auto;
-}
-}
-@media screen and (max-width:1800px) {
-.educ-dynamic {
-width: auto;
-height: auto
-}
-} 
 
 a.carousel-control{
   text-decoration: none;

@@ -75,6 +75,10 @@
     padding-right: 0 !important;
   }
 }
+#myCarousel2 {
+  width: 100vw;
+  margin-left: calc(-1 * ((100vw - 100%) / 2));
+}
 .lead-text {
   color: #002145;
 }
@@ -459,19 +463,6 @@ background-color: rgba(63, 126, 167, 1);*/
       right: 15%;
       left: auto;
       bottom: 5px;
-  }
-}
-@media screen and (min-width: 1800px) {
-  .educ-dynamic {
-      max-width: 1800px;
-      margin-right: auto;
-      margin-left: auto;
-  }
-}
-@media screen and (max-width: 1800px) {
-  .educ-dynamic {
-      width: auto;
-      height: auto
   }
 }
 a.carousel-control {
