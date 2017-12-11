@@ -1,3 +1,80 @@
+.image-region {
+  position: relative;
+  margin-right: -15px;
+  margin-left: -15px;
+  padding-top: 41%;
+  height: 0px;
+  overflow: hidden;
+}
+.image-region #banner {
+  position: absolute;
+  top: 0px;
+  height: 100%;
+}
+.header-text {
+  position: absolute;
+  text-align: left;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  color: white;
+  font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
+}
+.message {
+  text-align: right;
+  padding: 15px;
+}
+#large-title {
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 1;
+  color: white !important
+}
+#paragraph-title {
+  font-size: 20px; 
+  line-height: 25px;
+}
+@media screen and (max-width: 979px) {
+  #large-title {
+    font-size: 60px;
+    font-weight: 600;
+  }
+  #paragraph-title {
+    font-size: 15px;
+  }
+  .image-region {
+    margin-right: -20px;
+    margin-left: -20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #large-title {
+    font-size: 40px;
+    font-weight: 600;
+  }
+  #paragraph-title {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #paragraph-title {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  div[role=main] {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
 .lead-text {
   color: #002145;
 }
@@ -438,26 +515,6 @@ a.carousel-control {
   font-weight: none;
   line-height: 20px;
   text-shadow: 2px 2px 2px #000000;
-}
-@media screen and (max-width: 1700px) {
-  .carousel-caption a {
-    font-size: 300%;
-  }
-}
-
-@media screen and (max-width: 1250px) {
-  .carousel-caption a {
-    font-size: 220%;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .carousel-caption p {
-      display: none;
-  }
-  .carousel-caption {
-    width: 100%;
-  }
 }
 /* Override default slider to remove grey spacing bleed from menu */
 

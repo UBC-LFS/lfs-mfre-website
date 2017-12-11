@@ -1,3 +1,33 @@
+<div class="image-region no-padding">
+  <img id="banner" src="http://lfs-mfre-copy.sites.olt.ubc.ca/files/2013/11/Home_Banner_1.jpg" alt="Homepage Banner">
+  <div class="header-text">
+      <div class="bound container">
+          <div class="message">
+              <h2 id="large-title">Invest a Year<br>Reap Dividends for Life</h2>
+              <p id="paragraph-title">Today's world demands professionals capable of solving real problems in the food and resource sectors. UBC's Master of Food and Resource Economics (MFRE) degree enhances your career by equipping you to tackle these global issues, and to create positive change for the future.</p>
+          </div>
+      </div>
+  </div>
+</div>
+<div id="main-content" class="container"></div>
+<script>
+    var getDivMainRole = document.querySelector('div[role="main"]');
+    var getMainContent = document.getElementById('main-content');
+    var getContent = document.getElementById('content');
+    var getContainer = document.getElementById('container');
+    var getImageRegion = document.getElementsByClassName('image-region')[0];
+    getDivMainRole.insertBefore(getMainContent, getDivMainRole.childNodes[0]);
+    getMainContent.insertBefore(getContent, getMainContent.childNodes[0]);
+    getContainer.insertBefore(getImageRegion, getContainer.childNodes[0]);
+    (function loadBanner()
+    {
+        var image = document.createElement('img');
+        image.src = 'http://lfs-mfre-copy.sites.olt.ubc.ca/files/2013/11/Home_Banner_1.jpg';
+        image.onload = function() {
+            document.getElementById('banner').src = image.src;
+        };
+    })();
+</script>
 <div class="row-fluid expand">
   <div class="container">
     <div class="span3">

@@ -62,6 +62,26 @@ h6{
 li {
   font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;   
 }
+
+.lead-text{
+    font-size: 16px;
+    color: #555556;
+}
+
+.lead-text-highlight{
+    font-size: 22px;
+    color: #1CBC9C;
+}
+
+.teal{
+    color: #1CBC9C;
+}
+
+hr {
+  width: 125px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .post-byline {
     font-size: 85%;
 }
@@ -227,6 +247,21 @@ div[role=main] {
   padding-bottom: 5%;
 }
 
+.box.blue-light-bg a{
+  margin-top: 10px;
+}
+
+.box.blue-light-bg a.btn.btn-white{
+    border: 2px solid #FFFFFF;
+}
+
+.box.blue-light-bg a.btn.btn-white:hover{
+    border: 2px solid #1CBC9C;
+}
+
+.box.ubc-blue-bg a{
+    margin-top: 10px;
+}
 /* Remove left margin in rows */
 .row-fluid [class*="span"]:first-child{
 	margin-left:0px;
@@ -245,12 +280,16 @@ margin-left:0px !important;
 
 .blue-light-bg{
   /* background-color: #5E869F; old ubc grey spec */
-  background-color: #646464;
+  background-color: #54647b;
   color:white;
   border: 1px #97D4E9;
 }
 
 /* Button styles */
+
+.btn{
+    box-shadow: none;
+}
 
 .btn-white{
   background:#FFFFFF;
@@ -259,6 +298,8 @@ margin-left:0px !important;
   font-weight:bold;
   border:2px solid #002145;
   font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .btn-white:hover{
@@ -640,4 +681,10 @@ a.carousel-control{
 
 .span3.box.centred p{
   color:#646464;
+}
+
+/* CTA Padding Style */
+.cta hr{
+  margin-top:2px;
+  margin-bottom:4px;
 }
