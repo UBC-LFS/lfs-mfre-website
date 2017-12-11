@@ -60,6 +60,9 @@
     font-size: 14px;
     line-height: 16px;
   }
+  .custom-slider-excerpt {
+    margin-top: 20px;
+  }
 }
 @media screen and (max-width: 600px) {
   #paragraph-title {
@@ -74,6 +77,7 @@
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
+
 }
 #myCarousel2 {
   width: 100vw;
