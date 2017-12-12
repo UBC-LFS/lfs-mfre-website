@@ -1,0 +1,28 @@
+blockquote{
+  background-color: #F8F8F8;
+  border-left:5px solid #D7D7D7;
+  quotes:"\201C" "\201D";
+  padding-top: 33px;
+}
+
+blockquote:before, blockquote:after {
+  font:45px/1px Whitney;
+  color:#D7D7D7;
+  display: inline-block;
+}
+
+blockquote:before {
+  content:open-quote;
+  margin:0 2px 4px -2px;
+}
+
+blockquote:after {
+  content:close-quote;
+  margin:0 0 -4px;
+  margin-top: 34px;
+}
+
+p {
+  font-size: 40px;
+  line-height: 200px;
+}
