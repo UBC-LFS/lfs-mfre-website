@@ -436,3 +436,8 @@ a.carousel-control{
   }
 }
 
+@media screen and (max-width: 767px) {
+  .custom-slider-excerpt {
+    margin-top: 20px;
+  }
+}
