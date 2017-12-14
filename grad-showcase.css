@@ -26,7 +26,7 @@
 }
 
 .showcase-caption{
-  opacity: 0;
+  opacity: 0.0;
   padding: 0% 5% 5% 5%;
 }
 
@@ -34,23 +34,39 @@
 .showcase:hover .showcase-header{
   height:100%;
   transition: linear 0.5s;
+  -webkit-transition: linear 0.5s;
 }
 
 .showcase:hover .showcase-caption{
   display: block;
   opacity: 1;
   transition: linear 1s;
+  -webkit-transition: linear 1s;
 }
 
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-device-width: 770px) {
   .showcase-header{
     height: 100%;
+    h4{font-size: 12px;}
   }
-  .showcase-caption{
-    display: none;
+
+  .showcase:hover .showcase-caption{
+  display: none;
+}
+  
+  .showcase{
+    margin-top: 10px;
+    height: 100%;
   }
   
 }
+
+.location{
+  color:#1CBC9C;
+  font-weight:normal;
+  font-size:16px;
+}
+  
 
 /* Tiles */
 
@@ -440,4 +456,7 @@ a.carousel-control{
   .custom-slider-excerpt {
     margin-top: 20px;
   }
+}
+.showcase-header {
+  overflow: hidden;
 }
