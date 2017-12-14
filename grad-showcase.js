@@ -9,13 +9,6 @@ jQuery(document).ready(function ($) {
 
   $('.item').first().addClass('active')
 
-  $('#myCarousel2').swiperight(function () {
-    $('#myCarousel2').carousel('prev')
-  })
-  $('#myCarousel2').swipeleft(function () {
-    $('#myCarousel2').carousel('next')
-  })
-
   const wrap = (urlClass, targetClass) => {
     const elements = document.getElementsByClassName(urlClass)
     const urls = Array.from(elements).map(x => x.innerText.trim())
