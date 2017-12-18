@@ -61,7 +61,7 @@
     line-height: 16px;
   }
   .custom-slider-excerpt {
-    margin-top: 20px;
+    margin-top: 40px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -204,7 +204,7 @@
 }
 .custom-slider img {
   max-width: none;
-  height: 200px;
+  height: auto !important;
   width: auto;
   -webkit-filter: saturate(100%);
   margin: 0 auto;
@@ -335,7 +335,6 @@
   }
   .educ-dynamic .carousel-inner .item {
       max-height: 300px;
-      min-height: 200px;
       height: 300px;
       color: #FFF;
       line-height: 1.5;
@@ -518,3 +517,4 @@ a.carousel-control {
 .expanded-slider {
   margin-top: 0px;
 }
+
