@@ -1,0 +1,43 @@
+/* Leadership award tiles */
+
+.ldraward{
+  position: relative;
+}
+
+
+.ldraward-header{
+  position: absolute;
+  bottom:0;
+  left:0px;
+  z-index: 1;
+  width:100%;
+
+}
+
+.ldraward-header h2,h3,h4{color:white;}
+
+.ldraward-heading{
+  padding: 0% 5% 5% 5%;
+  background-color:#002145;
+  opacity: 0.9;
+  border-top: 10px solid #17A488;
+}
+
+.ldraward-caption{
+  display:block;
+  clear:both;
+  width: 100%;
+  padding: 0% 5% 5% 5%;
+  width: 90%
+}
+
+.bordered{
+  border: 1px solid gray;
+}
+
+@media only screen 
+  and (min-device-width: 200px) 
+  and (max-device-width: 770px){
+  
+  .bordered{ margin-top: 16px;}
+}
