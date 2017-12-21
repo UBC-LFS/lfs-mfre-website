@@ -17,6 +17,7 @@ jQuery(document).ready(function ($) {
   }
 
   wrap('company-website', 'company-name')
+  wrap('carousel-link-source', 'carousel-link-target')
 
   $('.slick-dots').insertAfter($('.slick-prev'))
 })
